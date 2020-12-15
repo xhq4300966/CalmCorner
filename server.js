@@ -1,7 +1,4 @@
-let port = process.env.PORT || 3000;
-server.listen(port, ()=> {
-console.log('listening at ', port);
-});
+
 
 let fs = require("fs");
 
@@ -10,6 +7,11 @@ var express = require("express");
 var app = express();
 
 app.use('/', express.static('public'));
+
+let port = process.env.PORT || 3000;
+app.listen(port, ()=> {
+console.log('listening at ', port);
+});
 
 // app.listen(3000,()=> {
 //   console.log("listening at port 3000")
