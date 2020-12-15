@@ -1,0 +1,119 @@
+#title {
+    font-size: 60px;
+    background-color: rgba(185, 214, 252, 0.356);
+    font-family: 'Roboto', sans-serif;
+
+    padding: 20px; 
+    color:rgba(120, 122, 180, 0.897)
+}
+
+.project_button {
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.486);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project_button:hover {
+    background-color: rgba(185, 214, 252, 0.356);
+    box-shadow: 0px 15px 20px rgba(120, 122, 180, 0.897);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+#soundURL {
+    margin-bottom: 30px;
+    position: absolute;
+    right: 10px;
+    top:175px;
+}
+
+
+#openChat {
+    height: 100px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.486);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left:30px;
+    top: 30px;
+}
+
+#openChat:hover {
+    background-color: rgba(185, 214, 252, 0.356);
+    box-shadow: 0px 15px 20px rgba(120, 122, 180, 0.897);
+    color: white;
+    transform: translateY(-3px);
+}
+
+#title {
+    position: absolute;
+    right: 0px;
+}
+
+#musicDIV {
+    position: absolute;
+    right: 10px;
+    top: 240px;
+
+}
+
+#imageDIV {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+#videoDIV {
+    position: absolute;
+    left: 130px;
+    top:130px;
+
+
+}
+
+#muteAudio {
+    position: relative;
+    left:20%
+}
+
+#container{
+    position: relative;
+
+}
+
+#theirVideos {
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    opacity: 85%;
+}
+
+#myvideo {
+    opacity: 85%;
+}

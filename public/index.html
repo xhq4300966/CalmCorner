@@ -1,0 +1,78 @@
+<html>
+	<head>
+	 	<script src="simplepeer.min.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="style_chat.css" rel="stylesheet">
+
+    </head>
+    <style>
+        body {
+            background-color:forestgreen;
+        }
+    </style>
+  <body>
+	<div>
+        <p><span id="title">Calm Corner</span></p>
+        <br />
+
+        <audio id="soundURL" controls><source src = "https://freesound.org/data/previews/479/479206_9477980-lq.mp3" id="track">
+          <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+        <br />
+
+
+        <div id="musicDIV">
+          <button  class="project_button" id="changeMusic" onclick="myMusic()">Change music for ALL</button>
+
+           <br />
+
+           <div id="music">
+               <input id="sound-input" placeholder="Music/Sound URL"></input>
+                <button  class="project_button" id="sound-confirm-button">Confirm</button>
+           </div>
+        </div>
+
+        <div id="imageDIV"> 
+            <button class="project_button" id="changeImage" onclick="myImage()">Change image for ALL</button>
+             <br />
+
+             <div id="image">
+                 <input id="image-input" placeholder="Image URL"></input>
+                  <button  class="project_button" id="img-confirm-button">Confirm</button>
+              </div>
+        </div>
+        
+        <div id="videoDIV">
+          <video id="myvideo" width="320" height="240" muted></video>
+          <br />
+          <button  class="project_button" id="muteAudio" onclick="myMute()">Mute my audio</button>
+       </div>
+
+       <div id="theirVideos"></div>
+
+        <br />
+  </div>
+  
+  <button id="openChat" onclick="myFunction()">Open Chat</button>
+
+  <div id="container">
+    <!-- View chat messages here here -->
+    <div class="sub-container chat-feed">
+        <div class="chat-header">CHAT ROOM</div>
+        <div class="chat-box" id="chat-box-msgs"></div>
+    </div>
+
+    <!-- Enter chat messages here -->
+    <div class="sub-container chat-input">
+        <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+        <input type="text" class="chat-input-msg" id="msg-input" placeholder="Message" />
+        <button id="send-button">Send</button>
+    </div>
+</div>
+
+
+  <script type="text/javascript" src="app_chat.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
